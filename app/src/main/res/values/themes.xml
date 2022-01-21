@@ -12,6 +12,8 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="android:editTextColor">@android:color/black</item>
+        <item name="android:textColorHint">@color/black</item>
     </style>
 
     <style name="Theme.Lyrics.NoActionBar">
@@ -19,7 +21,20 @@
         <item name="windowNoTitle">true</item>
     </style>
 
+    <style name="Theme.Lyrics.ActionBar">
+        <item name="windowActionBar">true</item>
+        <item name="windowNoTitle">false</item>
+    </style>
+
     <style name="Theme.Lyrics.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
 
     <style name="Theme.Lyrics.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <style name="SearchViewStyle" parent="Widget.AppCompat.Light.SearchView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:editTextColor">@color/white</item>
+        <item name="android:textColorHint">@color/light_gray</item>
+        <item name="searchIcon">@drawable/ic_search</item>
+    </style>
+
 </resources>

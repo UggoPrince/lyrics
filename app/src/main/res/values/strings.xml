@@ -1,11 +1,15 @@
 <resources>
     <string name="app_name">Lyrics</string>
-    <string name="action_settings">Settings</string>
-    <!-- Strings used for fragments for navigation -->
-    <string name="first_fragment_label">First Fragment</string>
-    <string name="second_fragment_label">Second Fragment</string>
-    <string name="next">Next</string>
-    <string name="previous">Previous</string>
+    <string name="savedLyricsButton">Saved Lyrics</string>
+    <string name="lyrics_view">Lyrics Details</string>
 
-    <string name="search_title"></string>
+    <string name="search_title">Search lyrics</string>
+    <string name="search_hint">Search lyrics…</string>
+
+    <string name="get_lyrics_error_text">An error occurred!</string>
+    <string name="preference_file_key">com.ugo.lyrics.ALBUMS</string>
+    <string name="artistNameHeader">Artist:</string>
+    <string name="songTitleHeader">Song:</string>
+    <string name="copyLyrics">Copy</string>
+    <string name="saveLyrics">Save</string>
 </resources>

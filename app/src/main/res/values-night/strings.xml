@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="artistNameHeader">Artist:</string>
+    <string name="songTitleHeader">Song:</string>
+    <string name="copyLyrics">Copy</string>
+</resources>

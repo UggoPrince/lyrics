@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     package="com.ugo.lyrics">
+
+    <uses-permission android:name="android.permission.INTERNET" />
 
     <application
         android:allowBackup="true"
@@ -8,9 +11,23 @@
         android:label="@string/app_name"
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
-        android:theme="@style/Theme.Lyrics">
+        android:theme="@style/Theme.Lyrics"
+        android:usesCleartextTraffic="true"
+        tools:ignore="AllowBackup">
+        <activity
+            android:name=".SavedLyricsDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".SavedLyricsActivity"
+            android:exported="false"
+            android:label="Saved Lyrics" />
+        <activity
+            android:name=".LyricsActivity"
+            android:label="@string/lyrics_view"
+            android:theme="@style/Theme.Lyrics.ActionBar" />
         <activity
             android:name=".MainActivity"
+            android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/Theme.Lyrics.NoActionBar">
             <intent-filter>
