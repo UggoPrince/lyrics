@@ -3,14 +3,9 @@
     xmlns:tools="http://schemas.android.com/tools"
     tools:context="com.ugo.lyrics.MainActivity">
     <item
-        android:id="@+id/action_settings"
+        android:id="@+id/openSavedLyrics"
         android:orderInCategory="100"
-        android:title="@string/action_settings"
-        app:showAsAction="never" />
-    <item android:id="@+id/search"
-        android:title="@string/search_title"
-        android:icon="@drawable/ic_search"
-        app:actionViewClass="androidx.appcompat.widget.SearchView"
-        app:showAsAction="always|collapseActionView"
-        tools:ignore="AlwaysShowAction" />
+        android:title="@string/savedLyricsButton"
+        android:enabled="false"
+        app:showAsAction="ifRoom" />
 </menu>
