@@ -5,6 +5,23 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     tools:context=".LyricsActivity">
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/lyricsDetailsAppBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/Theme.Lyrics.AppBarOverlay"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/lyricsDetailsToolbar"
+            android:layout_width="match_parent"
+            android:layout_height="?attr/actionBarSize"
+            android:background="?attr/colorPrimary"
+            android:paddingEnd="8dp"
+            app:popupTheme="@style/Theme.Lyrics.PopupOverlay" />
+    </com.google.android.material.appbar.AppBarLayout>
 
     <include
         layout="@layout/details_card"
@@ -13,7 +30,7 @@
         android:layout_height="wrap_content"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/lyricsDetailsAppBar" />
 
     <ScrollView
         android:id="@+id/scrollView2"
@@ -37,9 +54,11 @@
                 android:id="@+id/lyricsText"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
+                android:paddingStart="12dp"
+                android:paddingEnd="12dp"
                 android:paddingTop="8dp"
                 android:paddingBottom="8dp"
-                android:textColor="@color/black"
+                style="@style/TextViewLyrics"
                 android:textSize="@dimen/lyrics_text_size"
                 tools:visibility="gone" />
 
@@ -48,7 +67,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
-                android:textColor="@color/black"
+                style="@style/TextViewLyrics"
                 android:textSize="@dimen/size20"
                 tools:visibility="gone" />
 

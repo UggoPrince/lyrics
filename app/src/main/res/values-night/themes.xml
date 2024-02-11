@@ -2,7 +2,7 @@
     <!-- Base application theme. -->
     <style name="Theme.Lyrics" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
         <!-- Primary brand color. -->
-        <item name="colorPrimary">@color/purple_200</item>
+        <item name="colorPrimary">@color/purple_700</item>
         <item name="colorPrimaryVariant">@color/purple_700</item>
         <item name="colorOnPrimary">@color/black</item>
         <!-- Secondary brand color. -->
@@ -12,5 +12,36 @@
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
+        <item name="colorPrimaryDark">@color/slate_700</item>
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:colorBackground">@color/slate_900</item>
+    </style>
+
+    <style name="Theme.Lyrics.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+        <item name="colorPrimary">@color/slate_900</item>
+    </style>
+
+    <style name="Theme.Lyrics.PopupOverlay" parent="ThemeOverlay.AppCompat.Dark">
+        <item name="android:paddingEnd">8dp</item>
+    </style>
+
+    <style name="TextViewArtistNameStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">18sp</item>
+    </style>
+
+    <style name="TextViewSongTitleStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/teal_200</item>
+    </style>
+    <style name="TextViewLyrics" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/lyrics_text_size</item>
+    </style>
+    <style name="CardViewStyle" parent="CardView.Dark">
+        <item name="cardBackgroundColor">@color/slate_900</item>
+    </style>
+    <style name="CardViewTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/teal_200</item>
     </style>
 </resources>

@@ -34,6 +34,7 @@ class LyricsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_lyrics)
+        setSupportActionBar(findViewById(R.id.lyricsDetailsToolbar))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
         DataManager.initDb(applicationContext)
         // db = DataManager.db

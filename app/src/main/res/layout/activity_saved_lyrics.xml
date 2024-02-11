@@ -6,18 +6,19 @@
     android:layout_height="match_parent"
     tools:context=".SavedLyricsActivity">
 
-    <!--<com.google.android.material.appbar.AppBarLayout
+    <com.google.android.material.appbar.AppBarLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:theme="@style/Theme.Lyrics.AppBarOverlay">
 
     <androidx.appcompat.widget.Toolbar
-        android:id="@+id/toolbar"
+        android:id="@+id/savedLyricsToolbar"
         android:layout_width="match_parent"
         android:layout_height="?attr/actionBarSize"
         android:background="?attr/colorPrimary"
+        android:paddingEnd="8dp"
         app:popupTheme="@style/Theme.Lyrics.PopupOverlay" />
-    </com.google.android.material.appbar.AppBarLayout>-->
+    </com.google.android.material.appbar.AppBarLayout>
 
     <include
         android:id="@+id/savedLyricsView"

@@ -16,15 +16,18 @@
         tools:ignore="AllowBackup">
         <activity
             android:name=".SavedLyricsDetailsActivity"
+            android:theme="@style/Theme.Lyrics.NoActionBar"
+            android:label="@string/lyrics_view"
             android:exported="false" />
         <activity
             android:name=".SavedLyricsActivity"
             android:exported="false"
-            android:label="Saved Lyrics" />
+            android:label="Saved Lyrics"
+            android:theme="@style/Theme.Lyrics.NoActionBar" />
         <activity
             android:name=".LyricsActivity"
             android:label="@string/lyrics_view"
-            android:theme="@style/Theme.Lyrics.ActionBar" />
+            android:theme="@style/Theme.Lyrics.NoActionBar" />
         <activity
             android:name=".MainActivity"
             android:exported="true"
