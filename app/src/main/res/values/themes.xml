@@ -8,12 +8,12 @@
         <!-- Secondary brand color. -->
         <item name="colorSecondary">@color/teal_200</item>
         <item name="colorSecondaryVariant">@color/teal_700</item>
-        <item name="colorOnSecondary">@color/black</item>
+        <item name="colorOnSecondary">@color/slate_700</item>
         <!-- Status bar color. -->
         <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
         <!-- Customize your theme here. -->
-        <item name="android:editTextColor">@android:color/black</item>
-        <item name="android:textColorHint">@color/black</item>
+        <item name="android:editTextColor">@color/slate_900</item>
+        <item name="android:textColorHint">@color/slate_900</item>
     </style>
 
     <style name="Theme.Lyrics.NoActionBar">
@@ -26,15 +26,37 @@
         <item name="windowNoTitle">false</item>
     </style>
 
-    <style name="Theme.Lyrics.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+    <style name="Theme.Lyrics.AppBarOverlay"
+        parent="ThemeOverlay.AppCompat.Dark.ActionBar">
+    </style>
 
-    <style name="Theme.Lyrics.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+    <style name="Theme.Lyrics.PopupOverlay" parent="ThemeOverlay.AppCompat.Light">
+    </style>
 
-    <style name="SearchViewStyle" parent="Widget.AppCompat.Light.SearchView">
+    <style name="SearchViewStyle" parent="">
         <item name="android:textColor">@color/black</item>
         <item name="android:editTextColor">@color/white</item>
         <item name="android:textColorHint">@color/light_gray</item>
         <item name="searchIcon">@drawable/ic_search</item>
+        <item name="background">@color/white</item>
+    </style>
+
+    // Widget.AppCompat.Light.SearchView
+
+    <style name="TextViewArtistNameStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/purple_500</item>
+        <item name="android:textSize">@dimen/artist_name_size</item>
+    </style>
+
+    <style name="TextViewSongTitleStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/purple_700</item>
+    </style>
+    <style name="TextViewLyrics" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/lyrics_text_size</item>
+    </style>
+    <style name="CardViewTextStyle" parent="Widget.AppCompat.TextView">
+        <item name="android:textColor">@color/purple_500</item>
     </style>
 
 </resources>

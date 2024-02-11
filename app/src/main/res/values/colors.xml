@@ -10,4 +10,6 @@
     <color name="gray">#888</color>
     <color name="dark_gray">#333</color>
     <color name="light_gray">#eee</color>
+    <color name="slate_700">#475569</color>
+    <color name="slate_900">#0f172a</color>
 </resources>

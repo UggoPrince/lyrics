@@ -26,6 +26,7 @@ class SavedLyricsDetailsActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_saved_lyrics_details)
+        setSupportActionBar(findViewById(R.id.savedLyricsDetailsToolbar))
         supportActionBar?.setDisplayHomeAsUpEnabled(true)
 
         lyricsTextView = findViewById(R.id.lyricsText)

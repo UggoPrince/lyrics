@@ -1,13 +1,11 @@
 package com.ugo.lyrics
 
 import android.annotation.SuppressLint
-import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
 import android.os.Bundle
 import android.os.Handler
 import android.os.Looper
-import android.os.Message
 import android.util.Log
 import android.view.Menu
 import android.view.MenuItem
@@ -149,7 +147,7 @@ class MainActivity : AppCompatActivity() {
     }
 
     private fun fillRecyclerView() {
-        includeRecyclerView.setVisibility(View.VISIBLE)
+        includeRecyclerView.visibility = View.VISIBLE
         listItems.adapter = SongsRecyclerAdapter(this, albumsList)
     }
 
@@ -161,7 +159,7 @@ class MainActivity : AppCompatActivity() {
     @SuppressLint("ShowToast")
     override fun onResume() {
         super.onResume()
-        if (!albumsList.isEmpty()) {
+        if (albumsList.isNotEmpty()) {
             fillRecyclerView()
         } else {
             val message = "No Search Text Submitted"
@@ -169,7 +167,6 @@ class MainActivity : AppCompatActivity() {
         }
     }
 
-    @SuppressLint("ShowToast")
     override fun onCreateOptionsMenu(menu: Menu): Boolean {
         // Inflate the menu; this adds items to the action bar if it is present.
         menuInflater.inflate(R.menu.menu_main, menu)
